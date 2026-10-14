@@ -1,0 +1,13 @@
+./README.md: OK
+./licenses/LICENSE: OK
+./licenses/ThirdPartyNotices.txt: OK
+./models/htdemucs-6s/LICENSE.txt: OK
+./models/htdemucs-6s/htdemucs_6s.onnx: OK
+./models/htdemucs-6s/manifest.json: OK
+./runtime/libonnxruntime.so: OK
+./runtime/libonnxruntime.so.1: OK
+./runtime/libonnxruntime.so.1.22.0: OK
+./runtime/libonnxruntime_providers_shared.so: OK
+./start.sh: OK
+./stem-cli: OK
+./stem-desktop: OK

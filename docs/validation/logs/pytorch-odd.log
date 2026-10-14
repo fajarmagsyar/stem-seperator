@@ -1,0 +1,2 @@
+torch=2.4.1+cpu checkpoint=htdemucs_6s sources=['drums', 'bass', 'other', 'vocals', 'guitar', 'piano']
+inference_seconds=5.363433 shape=(1, 6, 2, 343980)

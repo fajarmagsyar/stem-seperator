@@ -1,0 +1,73 @@
+{
+  "schema_version": 2,
+  "id": "htdemucs-ft",
+  "version": "8616370ed541bc183dbe15fb0d54d5f49918f47e",
+  "backend": "htdemucs-ft-bag-v1",
+  "profile": "graph-internal-ft-v1",
+  "sample_rate": 44100,
+  "channels": 2,
+  "chunk_frames": 343980,
+  "overlap_frames": 85995,
+  "input": "mix",
+  "output": "stems",
+  "sources": [
+    {
+      "id": "drums",
+      "label": "Drums"
+    },
+    {
+      "id": "bass",
+      "label": "Bass"
+    },
+    {
+      "id": "other",
+      "label": "Other"
+    },
+    {
+      "id": "vocals",
+      "label": "Vocals"
+    }
+  ],
+  "license": {
+    "path": "USAGE.txt",
+    "sha256": "755078a5e58f0432cddc567937fffac3ac8222e8d114a972984b752217ccf46c"
+  },
+  "provenance": "Evaluation assets: original pretrained Demucs weights.\nOriginal author clarification: weights are provided for scientific purposes and are not covered by the code MIT license.\nhttps://github.com/facebookresearch/demucs/issues/327\nOriginal code: facebookresearch/demucs, MIT.\nConversion: StemSplitio/htdemucs-ft-onnx revision 8616370ed541bc183dbe15fb0d54d5f49918f47e, model card declares MIT for export.\nThe conversion declaration does not establish unrestricted rights to original weights. Do not redistribute as unrestricted MIT assets.\n",
+  "tested_devices": [
+    "cpu"
+  ],
+  "specialists": [
+    {
+      "source_id": "drums",
+      "output_row": 0,
+      "model": {
+        "path": "htdemucs_ft_drums.onnx",
+        "sha256": "f76b68af36066e38885b369299b5032a861038f9b49da5aa6cf1c31cfa69cf27"
+      }
+    },
+    {
+      "source_id": "bass",
+      "output_row": 1,
+      "model": {
+        "path": "htdemucs_ft_bass.onnx",
+        "sha256": "2a74d9283fc2336fcc58d50f87a7080aff57aea372f65cfe3f0211ea1ff16182"
+      }
+    },
+    {
+      "source_id": "other",
+      "output_row": 2,
+      "model": {
+        "path": "htdemucs_ft_other.onnx",
+        "sha256": "90e11806c1bb558ca9d9c7e909d28a2854f7f217982e90482dbed6442513daad"
+      }
+    },
+    {
+      "source_id": "vocals",
+      "output_row": 3,
+      "model": {
+        "path": "htdemucs_ft_vocals.onnx",
+        "sha256": "8c5d5e2da1f27050240bb80236673307ee3b40d4b064066d9350f4d64bfd544d"
+      }
+    }
+  ]
+}

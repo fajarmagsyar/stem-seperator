@@ -1,0 +1,51 @@
+{
+  "schema_version": 1,
+  "id": "htdemucs-6s",
+  "version": "49df9b6989cf2150840ea65b0bef77a2e471b678",
+  "backend": "htdemucs-onnx-v1",
+  "profile": "graph-internal-v1",
+  "sample_rate": 44100,
+  "channels": 2,
+  "chunk_frames": 343980,
+  "overlap_frames": 85995,
+  "input": "mix",
+  "output": "stems",
+  "sources": [
+    {
+      "id": "drums",
+      "label": "Drums"
+    },
+    {
+      "id": "bass",
+      "label": "Bass"
+    },
+    {
+      "id": "other",
+      "label": "Other"
+    },
+    {
+      "id": "vocals",
+      "label": "Vocals"
+    },
+    {
+      "id": "guitar",
+      "label": "Guitar"
+    },
+    {
+      "id": "piano",
+      "label": "Piano"
+    }
+  ],
+  "model": {
+    "path": "htdemucs_6s.onnx",
+    "sha256": "48f8e84945579f8ab340e083339e9221e03785dbe733a52c388200b6d3ca779a"
+  },
+  "license": {
+    "path": "LICENSE.txt",
+    "sha256": "0aadb95363233491ca147adb36d02a1f9fa3d62f0ef2a1b883277e71b9327a8f"
+  },
+  "provenance": "https://huggingface.co/StemSplitio/htdemucs-6s-onnx/tree/49df9b6989cf2150840ea65b0bef77a2e471b678 ; Original checkpoint 5c90dfd2-34c22ccb.th; MIT license declared by source; CPU parity measured in docs/validation/cpu-baseline.md",
+  "tested_devices": [
+    "cpu"
+  ]
+}

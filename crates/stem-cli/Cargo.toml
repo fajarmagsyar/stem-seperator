@@ -1,0 +1,12 @@
+[package]
+name = "stem-cli"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+stem-core = { path = "../stem-core" }
+tempfile = "=3.23.0"
+
+[lints]
+workspace = true

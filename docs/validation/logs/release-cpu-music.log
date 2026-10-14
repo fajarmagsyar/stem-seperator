@@ -1,0 +1,4 @@
+provider=CPU samples=4127760 inference_and_write_seconds=3.444810
+wall_seconds= 6.648514841000178
+peak_rss_kib= 4403616
+samples=4127760 max_abs=0.000040723010897636414 rmse=0.00000115267020451802

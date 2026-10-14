@@ -1,0 +1,19 @@
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.02s
+     Running tests/model_contract.rs (target/debug/deps/model_contract-958c3cbc1bdc19b4)
+
+running 1 test
+drums max_abs=0.00000011175870895385742 rmse=0.000000004460786935818505
+
+thread 'six_stem_cpu_matches_reference' (7) panicked at crates/stem-core/tests/model_contract.rs:99:9:
+drums exceeds tolerance
+note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+test six_stem_cpu_matches_reference ... FAILED
+
+failures:
+
+failures:
+    six_stem_cpu_matches_reference
+
+test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 2 filtered out; finished in 7.83s
+
+error: test failed, to rerun pass `-p stem-core --test model_contract`

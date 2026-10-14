@@ -1,0 +1,153 @@
+   Compiling stem-core v0.1.0 (/home/pgratg/Documents/Project/stem-seperator/crates/stem-core)
+   Compiling stem-desktop v0.1.0 (/home/pgratg/Documents/Project/stem-seperator/crates/stem-desktop)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.95s
+     Running unittests src/main.rs (target/debug/deps/stem_cli-11f9337f6c7a407d)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/commands.rs (target/debug/deps/commands-6723308ae9599fb6)
+
+running 5 tests
+test full_song_and_model_validation_commands_report_missing_assets ... ok
+test inference_command_rejects_invalid_requests_before_creating_outputs ... ok
+test parity_command_has_machine_checkable_pass_and_fail_exit_codes ... ok
+test invalid_cli_requests_cannot_report_validation_success ... ok
+test unavailable_runtime_returns_an_error_and_preserves_existing_outputs ... ok
+
+test result: ok. 5 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running unittests src/lib.rs (target/debug/deps/stem_core-1bbabe164afae45c)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/audio.rs (target/debug/deps/audio-84a4369efcadb96b)
+
+running 3 tests
+test decode_rejects_empty_truncated_multichannel_and_cancelled_inputs ... ok
+test flac_and_gapless_mp3_decode_at_their_native_rate ... ok
+test decoded_audio_contract ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.22s
+
+     Running tests/contracts.rs (target/debug/deps/contracts-bca830cb3a2bebe0)
+
+running 2 tests
+test chunks_reject_unequal_channels_and_nonfinite_samples ... ok
+test stem_ids_cannot_escape_export_directories_or_name_windows_devices ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/export.rs (target/debug/deps/export-df64a0ed06f3b744)
+
+running 3 tests
+test export_failure_preserves_results_and_preexisting_files ... ok
+test stem_named_mix_can_be_exported_with_audition_mix ... ok
+test export_float_alignment_and_mix_amplitude ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/job.rs (target/debug/deps/job-23538f818599e0c2)
+
+running 2 tests
+test single_job_lifecycle ... ok
+test retries_keep_current_result_and_replacement_reclaims_old_cache ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/manifest.rs (target/debug/deps/manifest-087eda9e2e93a6ba)
+
+running 2 tests
+test package_rejects_symlink_assets_outside_root ... ok
+test manifest_contract_validation ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/model_contract.rs (target/debug/deps/model_contract-e13483aee4862b13)
+
+running 3 tests
+test six_stem_cpu_matches_reference ... ignored, requires real model, runtime, fixture and independent reference output
+test model_contract_rejects_ambiguous_sources_and_invalid_audio_dimensions ... ok
+test backend_outputs_must_follow_declared_sources_and_exact_chunk_dimensions ... ok
+
+test result: ok. 2 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/parity.rs (target/debug/deps/parity-49ecd070e33d9817)
+
+running 3 tests
+test comparison_measures_real_errors_and_enforces_explicit_tolerance ... ok
+test comparison_rejects_invalid_parameters_and_missing_files ... ok
+test comparison_rejects_incomplete_wrong_shape_and_nonfinite_outputs ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/pipeline.rs (target/debug/deps/pipeline-145919b2f5c1e339)
+
+running 2 tests
+test separation_cancellation_never_returns_success ... ok
+test reconstruction_alignment_and_join_impulses ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running unittests src/lib.rs (target/debug/deps/stem_desktop-f80d75e74901eaa7)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/main.rs (target/debug/deps/stem_desktop-2b1308b9d54b231e)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/desktop_controls.rs (target/debug/deps/desktop_controls-2d2b4305216a82eb)
+
+running 2 tests
+test real_song_mixer_and_export_controls ... ignored, requires provisioned local model and runtime; runs real CPU inference
+test empty_window_controls_and_invalid_model_work_at_minimum_size ... ok
+
+test result: ok. 1 passed; 0 failed; 1 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests/desktop_state.rs (target/debug/deps/desktop_state-381f1ac491c38e1f)
+
+running 2 tests
+test controls_follow_job_and_device_state ... ok
+test mixer_uses_declared_sources_and_model_changes_do_not_mutate_results ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/lib.rs (target/debug/deps/stem_playback-56b755e63c7f3148)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/transport.rs (target/debug/deps/transport-fb4f04eeb6c134ce)
+
+running 1 test
+test shared_transport_clock ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+   Doc-tests stem_core
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests stem_desktop
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+   Doc-tests stem_playback
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

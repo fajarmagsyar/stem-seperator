@@ -1,0 +1,4 @@
+[0;93m2026-10-12 08:56:04.078604427 [W:onnxruntime:Default, telemetry_1ds.cc:600 operator()] Failed to persist telemetry device ID; using an in-memory identifier[m
+runtime=1.31.0 providers=['CPUExecutionProvider']
+inference_seconds=3.573237
+shape=(1, 6, 2, 343980) finite=True

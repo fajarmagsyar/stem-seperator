@@ -1,0 +1,10 @@
+   Compiling stem-desktop v0.1.0 (/home/pgratg/Documents/Project/stem-seperator/crates/stem-desktop)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.57s
+     Running tests/desktop_controls.rs (target/debug/deps/desktop_controls-2d2b4305216a82eb)
+
+running 1 test
+ALSA lib confmisc.c:165:(snd_config_get_card) [error.core] Cannot get card index for stem-test-nonexistent
+test real_song_mixer_and_export_controls ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 1 filtered out; finished in 16.04s
+

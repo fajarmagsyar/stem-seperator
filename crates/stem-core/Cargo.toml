@@ -1,0 +1,21 @@
+[package]
+name = "stem-core"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+ort = { version = "=2.0.0-rc.10", default-features = false, features = ["std", "load-dynamic"] }
+serde = { version = "=1.0.228", features = ["derive"] }
+serde_json = "=1.0.145"
+sha2 = "=0.10.9"
+symphonia = { version = "=0.5.5", features = ["mp3", "flac", "wav", "pcm"] }
+rubato = "=0.16.2"
+hound = "=3.5.1"
+fs2 = "=0.4.3"
+
+[dev-dependencies]
+tempfile = "=3.23.0"

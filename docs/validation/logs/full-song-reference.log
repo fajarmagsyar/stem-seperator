@@ -1,0 +1,19 @@
+runtime=1.22.0 frames=2710336
+chunk_start=0 valid=343980
+chunk_start=257985 valid=343980
+chunk_start=515970 valid=343980
+chunk_start=773955 valid=343980
+chunk_start=1031940 valid=343980
+chunk_start=1289925 valid=343980
+chunk_start=1547910 valid=343980
+chunk_start=1805895 valid=343980
+chunk_start=2063880 valid=343980
+chunk_start=2321865 valid=343980
+chunk_start=2579850 valid=130486
+drums: max_abs=0 rmse=0
+bass: max_abs=0 rmse=0
+other: max_abs=0 rmse=0
+vocals: max_abs=0 rmse=0
+guitar: max_abs=0 rmse=0
+piano: max_abs=0 rmse=0
+PASS: exact dimensions, finite samples, all boundaries covered, max_abs<=5e-5
